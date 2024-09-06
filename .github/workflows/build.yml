@@ -39,18 +39,13 @@ jobs:
         uses: jasonn3/build-container-installer@main
         id: build
         with:
-          arch: ${{ env.ARCH }}
-          image_name: ${{ env.IMAGE_NAME}}
-          image_repo: ${{ env.IMAGE_REPO}}
-          image_tag: ${{ env.IMAGE_TAG }}
-          variant: ${{ env.VARIANT }}
-          iso_name: ${{ env.IMAGE_NAME }}-${{ env.IMAGE_TAG }}_${{ env.ARCH }}.iso
-        env:
-          ARCH: x86_64
-          IMAGE_NAME: dev-image
-          IMAGE_REPO: ghcr.io/arminmiau
-          IMAGE_TAG: latest
-          VARIANT: kinoite
+          arch: x86_64
+          image_name: dev-image
+          image_repo: ghcr.io/arminmiau
+          image_tag: latest
+          version: 40
+          variant: kinoite
+          iso_name: dev-image-latest_x86_64.iso
       - name: Upload ISO as artifact
         id: upload
         uses: actions/upload-artifact@v4
