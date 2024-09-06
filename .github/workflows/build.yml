@@ -25,7 +25,7 @@ jobs:
           - recipe.yml
     steps:
        # the build is fully handled by the reusable github action
-      - name: Build Custom Image
+      - name: Build
         uses: blue-build/github-action@v1.6
         with:
           recipe: ${{ matrix.recipe }}
@@ -37,13 +37,14 @@ jobs:
           maximize_build_space: true
   iso:
     name: Build ISO
+    needs: bluebuild
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
       id-token: write
     steps:
-      - name: Build ISO
+      - name: Build
         uses: jasonn3/build-container-installer@main
         id: build
         with:
@@ -54,7 +55,7 @@ jobs:
           version: 40
           variant: kinoite
           iso_name: dev-image-latest_x86_64.iso
-      - name: Upload ISO as artifact
+      - name: Upload as artifact
         id: upload
         uses: actions/upload-artifact@v4
         with:
