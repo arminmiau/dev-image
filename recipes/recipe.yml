@@ -24,11 +24,11 @@ modules:
       - filelight
       - libreoffice
       - dotnet-sdk-8.0
-      remove:
-        - ptyxis
-        - skanpage
-        - solaar
-        - dev-pod
+    remove:
+      - ptyxis
+      - skanpage
+      - solaar
+      - dev-pod
 
   - type: default-flatpaks
     notify: true
