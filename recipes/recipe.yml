@@ -13,11 +13,22 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/medzik/jetbrains/repo/fedora-%OS_VERSION%/medzik-jetbrains-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/atim/lazygit/repo/fedora-%OS_VERSION%/atim-lazygit-fedora-%OS_VERSION%.repo
     install:
       - rider
       - alacritty
-    remove:
-    # none for now
+      - lazygit
+      - mediawriter
+      - gwenview
+      - haruna
+      - filelight
+      - libreoffice
+      - dotnet-sdk-8.0
+      remove:
+        - ptyxis
+        - skanpage
+        - solaar
+        - dev-pod
 
   - type: default-flatpaks
     notify: true
@@ -26,8 +37,12 @@ modules:
         - io.github.zen_browser.zen
         - com.bitwarden.desktop
         - it.mijorus.gearlever
-      remove:
-      # none for now
+        - org.fkoehler.KTailctl
+        - io.github.dvlv.boxbuddyrs
+        - io.missioncenter.MissionCenter
 
   - type: signing
+  - type: script
+    scripts:
+      - ohmyposh.sh
 
