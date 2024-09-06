@@ -48,7 +48,7 @@ jobs:
         env:
           ARCH: x86_64
           IMAGE_NAME: dev-image
-          IMAGE_REPO: arminmiau
+          IMAGE_REPO: ghcr.io/arminmiau
           IMAGE_TAG: latest
           VARIANT: kinoite
       - name: Upload ISO as artifact
