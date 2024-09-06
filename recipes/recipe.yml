@@ -28,8 +28,6 @@ modules:
       - ptyxis
       - skanpage
       - solaar
-      - dev-pod
-
   - type: default-flatpaks
     notify: true
     system:
@@ -40,7 +38,6 @@ modules:
         - org.fkoehler.KTailctl
         - io.github.dvlv.boxbuddyrs
         - io.missioncenter.MissionCenter
-
   - type: signing
   - type: script
     scripts:
