@@ -1,10 +1,9 @@
 # dev-image &nbsp; [![bluebuild build badge](https://github.com/arminmiau/dev-image/actions/workflows/build.yml/badge.svg)](https://github.com/arminmiau/dev-image/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+A custom [Universal Blue](https://universal-blue.org/) [Aurora](https://getaurora.dev) image with more dev tools like Rider and nodejs preinstalled.
+OCI image built using [bluebuild](blue-build.org), ISO built using JasonN3’s [build-container-installer](https://github.com/JasonN3/build-container-installer).
 
-After setup, it is recommended you update this README to describe your custom image.
-
-## Installation
+## Installation using rpm-ostree rebase
 
 > **Warning**  
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
@@ -28,11 +27,9 @@ To rebase an existing atomic Fedora installation to the latest build:
   systemctl reboot
   ```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
-
 ## ISO
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+Go to the [workflow](https://github.com/arminmiau/dev-image/actions/workflows/build.yml), click the latest passing build and download the artifact which contains a .iso file.
 
 ## Verification
 
