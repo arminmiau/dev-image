@@ -1,0 +1,23 @@
+[Keyboard]
+NumLock=0
+
+[Libinput][6940][7078][Corsair CORSAIR SLIPSTREAM WIRELESS USB Receiver]
+PointerAcceleration=-0.200
+PointerAccelerationProfile=1
+
+[Libinput][6940][7090][CORSAIR DARKSTAR WL Mouse]
+PointerAcceleration=-0.200
+PointerAccelerationProfile=1
+
+[Libinput][6940][7090][Corsair CORSAIR DARKSTAR RGB WIRELESS Gaming Mouse]
+PointerAcceleration=-0.200
+PointerAccelerationProfile=1
+
+[Libinput][1739][52560][SYNA32AC:00 06CB:CD50 Touchpad]
+NaturalScroll=true
+PointerAcceleration=0.200
+PointerAccelerationProfile=1
+
+[Mouse]
+cursorSize=32
+cursorTheme=Posy_Cursor_Black
