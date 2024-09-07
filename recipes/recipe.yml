@@ -24,6 +24,8 @@ modules:
       - filelight
       - libreoffice
       - dotnet-sdk-8.0
+      - btop
+      - syncthing
     remove:
       - ptyxis
       - skanpage
