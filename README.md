@@ -6,7 +6,7 @@ OCI image built using [bluebuild](blue-build.org), ISO built using JasonN3’s [
 ## Installation using rpm-ostree rebase
 
 > **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion. Also rpm-ostree will get reworked into a stable release with F41.
+> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainer), try at your own discretion.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
