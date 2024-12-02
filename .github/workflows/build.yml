@@ -52,7 +52,7 @@ jobs:
           image_name: dev-image
           image_repo: ghcr.io/arminmiau
           image_tag: latest
-          version: 40
+          version: 41
           variant: kinoite
           iso_name: dev-image-latest_x86_64.iso
       - name: Upload as artifact
