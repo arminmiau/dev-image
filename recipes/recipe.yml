@@ -29,7 +29,6 @@ modules:
     remove:
       - ptyxis
       - skanpage
-      - solaar
   - type: default-flatpaks
     notify: true
     system:
