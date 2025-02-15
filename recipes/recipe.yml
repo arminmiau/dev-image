@@ -33,7 +33,7 @@ modules:
     notify: true
     system:
       install:
-        - io.github.zen_browser.zen
+        - app.zen_browser.zen
         - com.bitwarden.desktop
         - it.mijorus.gearlever
         - org.fkoehler.KTailctl
